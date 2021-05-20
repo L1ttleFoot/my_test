@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+{% load static %}
+
+<html>
+	<head>
+		<meta charset="utf-8">
+        <title>Test page</title>
+		<script src="{% static 'js/Poop.js' %}"></script>
+        <link rel="stylesheet" href="{% static 'css/2.css' %}">
+	</head>
+	<body>
+		
+		<h>
+			Тестовая страница	
+		</h>
+
+		<ul class="hr">
+			<li><button onclick="f2()">Click Counter</button></li>
+			<li><button onclick="f1()">Game</button></li>
+			<li><div class="dropdown">
+				<button onclick="myFunction()" class="dropbtn">Выпадающий список</button>
+				<div id="myDropdown" class="dropdown-content">
+					<button onclick="ff1()">Impact</button>
+					<button onclick="ff2()">Courier New</button>
+					<button onclick="ff3()">Bradley Hand</button>
+				</div>
+			  </div> </li>
+			<li><button>Button 4</button></li>
+			<li><button>Button 5</button></li>
+		</ul>
+		<p>
+			Здесь находится тестовый текст, проходите мимо.
+		</p>
+
+		<p class="counter" id="insert1">You click 0 times yet. Go ahead!</p>
+		
+		<p class="warning" id="insert">Press Game button to play game!</p>
+		
+		<div class="font-family_test">
+			<table>
+				<tr>
+					<td>
+						<ul type="none">
+							<li class="Arial">Этот текст в стиле Arial</li>
+							<li class="Georgia">Этот текст в стиле Georgia</li>
+							<li class="Courier_New">Этот текст в стиле Courier New</li>
+							<li class="Impact">Этот текст в стиле Impact</li>
+							<li class="Bradley_Hand">Этот текст в стиле Bradley Hand</li>
+						</ul>
+					</td>
+
+					<td>
+						<p class="text" id=insert2>Шрифт даного текста можно изменить из выпадающего списка.</p>
+					</td>
+				</tr>
+
+			</table>
+		</div>
+	</body>
+</html>
+
+
